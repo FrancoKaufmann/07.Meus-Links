@@ -1,0 +1,149 @@
+@charset "UTF-8";
+
+/* Font para a Frase */
+@font-face {
+    font-family: "intro";
+    src: url("intro.otf") format("opentype"); font-weight: normal; font-style: normal;
+}
+
+/* Font para o Nome */
+@font-face {
+    font-family: "reikna";
+    src: url(./fonts/Reikna.ttf) format("truetype"); font-weight: normal; font-style: normal;
+}
+
+/* variaveis  */
+:root {
+    --font-color: #1E1D1B;
+    --bg-color01: #FFB11A;
+    --bg-color02: #9D9D9C;
+    --bg-color03: #FFF4DF;
+    --px-cir: 550px;
+    --px-ft: 500px;
+}
+
+body {
+
+   background-color: var(--bg-color03);
+   margin: 0px;
+}
+
+.cabecalho-relative {
+    position: relative;
+    width: 100%;
+    height:500px;
+    
+}
+
+/* redes sociais */
+#gmail, #linkedin, #github, .nome-meu {
+    margin-left: 100px;
+    width: 500px;
+    padding-left: 100px;
+    border-radius: 100px;
+    font-family: 'intro';
+    padding: 30px;
+    background-color: var(--font-color);
+    color: var(--bg-color03);
+    text-align: center;
+
+}
+
+#gmail, #linkedin, #github {
+    margin-top: 40px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+}
+
+#nome-meu {
+    font-family: 'reikna';
+    font-size: 70px;
+    text-align: center;
+    margin-top: 60px;
+    color: var(--font-color);
+    background-color: var(--bg-color01);
+    cursor: pointer;
+   
+}
+
+/* Fundo da foto de perfil */
+.fundo {
+    position:absolute;
+    background-color: var(--bg-color01);
+    border-radius: var(--px-cir) var(--px-cir)  var(--px-cir) var(--px-cir) ;
+    width: var(--px-cir);
+    height: var(--px-cir);
+    left: 1100px;
+    top: -15px;
+}
+
+/* frase da foto de perfil */
+.frase {
+    position: absolute;
+    left: 1114px;
+    top: 90px;
+    font-family: 'intro';
+    color: var(--font-color);
+    font-size: 60px;
+    text-align: right;
+    cursor: pointer;
+    
+}
+
+.imagem-perfil {
+    border-radius: 550px;
+    position: absolute;
+    left: 1130px;
+    width: var(--px-ft);
+    top: 20px;
+    height: var(--px-ft);
+    cursor: pointer;
+}
+
+/* Animações de texto */
+
+h1:hover{
+    color: var(--bg-color03);
+    transition: 1s;
+}
+
+#gmail:hover {
+    color: var(--bg-color01);
+    transition: 0s;
+
+}
+
+#linkedin:hover {
+   color: var(--bg-color01);
+   transition: 0s;
+     
+}
+
+#github:hover {
+    color: var(--bg-color01);
+    transition: 0s;
+
+}
+
+img:hover {
+    transition: 1s;
+    width: 510px;
+    height: 510px;
+}
+
+#nome-meu:hover {
+    transition: 1s;
+    color: var(--bg-color03)
+
+}
+
+
+
+
+
+
+
